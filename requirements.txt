@@ -1,1 +1,2 @@
 no additional libraries required this project uses pythons standard libraries only
+terminal based program, doesnt require much performance and easy to run
