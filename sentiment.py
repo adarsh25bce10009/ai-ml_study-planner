@@ -1,5 +1,5 @@
-POSITIVE_WORDS = ["good", "great", "fine", "ready", "motivated", "fresh", "happy", "energetic", "confident"]
-NEGATIVE_WORDS = ["sick","tired", "stressed", "exhausted", "bad", "overwhelmed", "anxious", "nervous", "scared", "worried"]
+POSITIVE_WORDS = ["good", "great", "fine", "ready", "motivated", "fresh", "happy", "energetic", "confident","okay"]
+NEGATIVE_WORDS = ["sick","tired", "stressed", "exhausted", "bad", "overwhelmed", "anxious", "nervous", "scared", "worried","weak"]
 
 def detect_mood(user_input):
     text = user_input.lower()
