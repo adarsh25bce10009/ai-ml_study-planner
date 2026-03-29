@@ -4,7 +4,7 @@ A Python-based command-line study planner that generates a personalized study sc
 
 ## Overview
 
-Managing multiple subjects with different difficulty levels and exam dates can be overwhelming. This tool helps students plan their study sessions smartly by ranking subjects using a priority scoring system and adjusting the schedule based on how the student is feeling.
+Managing multiple subjects with different difficulty levels and exam dates can be overwhelming. This tool helps students plan their study sessions smartly by ranking subjects using a priority scoring system and adjusting the schedule based on how the student is feeling, and tells the students which subjects to focus on first to maximise result.
 
 ## Features
 
@@ -35,7 +35,7 @@ study-planner/
 
 ## Setup and Usage
 
-**Requirements:** Python 3.x — no external libraries needed
+**Requirements:** Python 3.x - no external libraries needed
 
 **Run the planner:**
 ```bash
@@ -70,11 +70,11 @@ Good luck with your studies!
 
 ## Concepts Applied
 
-- **Priority Scoring** — weighted formula combining difficulty and urgency
-- **Sentiment Analysis** — keyword-based NLP mood detection
-- **Data Representation** — structured subject data with multiple attributes
-- **Decision Logic** — mood-based intensity adjustment
+- **Priority Scoring** - weighted formula combining difficulty and urgency
+- **Sentiment Analysis** - keyword-based NLP mood detection
+- **Data Representation** - structured subject data with multiple attributes
+- **Decision Logic** - mood-based intensity adjustment
 
 ## Author
 
-Adarsh Kumar Yadav — B.Tech CSE, VIT Bhopal University
+Adarsh Kumar Yadav - B.Tech CSE, VIT Bhopal University
