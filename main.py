@@ -1,20 +1,20 @@
 from sentiment import detect_mood
-from planner import generate_schedule
+from planner import generate_sch
 
-def display_schedule(schedule, total_hours, mood, intensity):
+def display_sch(sch, t_hours, mood, intensity):  #to displ
     print("\n" + "="*50)
     print("       YOUR PERSONALIZED STUDY PLAN")
     print("="*50)
     print(f"Mood detected : {mood.capitalize()}")
     print(f"Study intensity : {intensity.capitalize()}")
-    print(f"Total study hours allocated : {total_hours} hrs")
+    print(f"Total study hours allocated : {t_hours} hrs")
     print("-"*50)
 
-    for i, item in enumerate(schedule, start=1):
+    for i, item in enumerate(sch, start=1):
         print(f"{i}. {item['subject']}")
         print(f"   Priority Score  : {item['priority_score']}")
-        print(f"   Hours Allocated : {item['hours_allocated']} hr(s)")
-        print(f"   Days Until Exam : {item['days_until_exam']}")
+        print(f"   Hours Allocated : {item['alloh']} hr(s)")
+        print(f"   Days Until Exam : {item['leftTime']}")
         print()
 
     print("="*50)
@@ -26,7 +26,7 @@ def main():
     print("   STUDY PLANNER WITH SMART SUGGESTIONS")
     print("="*50)
 
-    while True:
+    while True:  #check
         try:
             hours = int(input("\nHow many hours can you study today? "))
             if hours <= 0:
@@ -36,14 +36,14 @@ def main():
         except ValueError:
             print("Invalid input. Please enter a number.")
 
-    print("\nHow are you feeling right now?")
+    print("\nHow are you feeling right now?")   #mood
     print("(e.g. I am feeling tired and stressed / I am feeling good and motivated)")
-    mood_input = input("> ")
+    moodInput = input("> ")
 
-    mood, intensity = detect_mood(mood_input)
+    mood, intensity = detect_mood(moodInput)
 
-    schedule, total_hours = generate_schedule(hours, intensity)
-    display_schedule(schedule, total_hours, mood, intensity)
+    sch, t_hours = generate_sch(hours, intensity)
+    display_sch(sch, t_hours, mood, intensity)
 
 if __name__ == "__main__":
     main()
